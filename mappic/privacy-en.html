@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mappic Privacy Policy</title>
+<meta name="description" content="Privacy policy for the mappic app — Romantic Rider">
+<style>
+  :root {
+    --bg: #FAF7F2;
+    --surface: #FFFFFF;
+    --ink: #1F2530;
+    --ink-muted: #5A6473;
+    --accent: #2D6675;
+    --outline: #D1C7B5;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", system-ui, serif;
+    line-height: 1.75;
+    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: clamp(1.25rem, 4vw, 3rem) 1.25rem 4rem; }
+  header.doc { border-bottom: 2px solid var(--ink); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  .brand { font-size: 0.85rem; letter-spacing: 0.08em; color: var(--accent); font-weight: 700; text-transform: uppercase; font-family: system-ui, sans-serif; }
+  h1 { font-size: clamp(1.6rem, 1.3rem + 1.5vw, 2.2rem); margin-top: 0.35rem; line-height: 1.3; }
+  .meta { color: var(--ink-muted); font-size: 0.85rem; margin-top: 0.6rem; font-family: system-ui, sans-serif; }
+  .lang { float: right; font-size: 0.85rem; font-family: system-ui, sans-serif; }
+  .lang a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 0.6rem; padding-top: 0.4rem; }
+  h2::before { content: ""; display: block; width: 2rem; height: 3px; background: var(--accent); margin-bottom: 0.6rem; }
+  ul { padding-left: 1.2rem; margin: 0.4rem 0 0.8rem; }
+  li { margin: 0.25rem 0; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .summary h2 { margin-top: 0; font-size: 1.05rem; }
+  .summary ul { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1rem; font-size: 0.92em; font-family: system-ui, sans-serif; }
+  th, td { border: 1px solid var(--outline); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
+  th { background: #EFE9DD; font-weight: 700; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--outline); color: var(--ink-muted); font-size: 0.85rem; font-family: system-ui, sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11161D; --surface: #1A2029; --ink: #ECEEF2; --ink-muted: #B9C0CC; --accent: #5DA7B6; --outline: #3D4654; }
+    th { background: #222934; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="doc">
+    <span class="lang"><a href="./privacy.html">한국어</a></span>
+    <div class="brand">Romantic Rider · mappic</div>
+    <h1>mappic Privacy Policy</h1>
+    <p class="meta">Effective date: July 7, 2026 · Version 1.0</p>
+  </header>
+
+  <p>Romantic Rider (the "Operator") respects the privacy of users of the mappic app (the "Service") and complies with applicable laws, including the Personal Information Protection Act of Korea and the Act on the Protection and Use of Location Information. This policy explains what information the Service handles and how.</p>
+
+  <section class="summary">
+    <h2>At a glance</h2>
+    <ul>
+      <li>mappic has <strong>no account or sign-in, and does not collect or transmit your personal data to the Operator's servers.</strong></li>
+      <li>Your photos, locations, and notes are <strong>stored only on your device.</strong></li>
+      <li>Coordinates are <strong>momentarily sent to external APIs</strong> to display addresses and nearby attractions; the Operator never stores them.</li>
+      <li>No advertising SDKs or analytics/tracking tools are used.</li>
+    </ul>
+  </section>
+
+  <h2>1. Information we process and why</h2>
+  <p>The Service processes the following information on your device only. Nothing is collected by the Operator's servers.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Information</th><th>Purpose</th><th>Storage &amp; retention</th></tr>
+    <tr>
+      <td>Camera images</td>
+      <td>Taking photos and compositing timestamp/location overlays</td>
+      <td>On device · until you delete them</td>
+    </tr>
+    <tr>
+      <td>Location (GPS coordinates)</td>
+      <td>Recording where a photo was taken, showing photos on the map, address lookup, nearby attractions</td>
+      <td>On device · until you delete them</td>
+    </tr>
+    <tr>
+      <td>Photo library access</td>
+      <td>Importing your existing geotagged photos into the map diary (only when you run the import)</td>
+      <td>On device · until you delete them</td>
+    </tr>
+  </table>
+  </div>
+  <p>Each permission (camera, location, photos) is requested with your consent when you first use the related feature, and can be revoked anytime in your device settings. Denying a permission only disables that feature.</p>
+
+  <h2>2. Coordinates sent to external APIs</h2>
+  <p>When you use the features below, the coordinates needed for the feature are sent directly from your device to external APIs. They are used only to generate the response; the Operator does not collect or store them.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Recipient</th><th>Feature</th><th>Data sent</th></tr>
+    <tr>
+      <td>NAVER Cloud Corp. — Naver Maps API</td>
+      <td>Map display, reverse geocoding (coordinates → address)</td>
+      <td>Map viewport / photo coordinates</td>
+    </tr>
+    <tr>
+      <td>Korea Tourism Organization — TourAPI</td>
+      <td>Finding tourist attractions near your current location</td>
+      <td>Current location coordinates</td>
+    </tr>
+  </table>
+  </div>
+  <p>Each recipient's handling of data is governed by its own privacy policy.</p>
+
+  <h2>3. Third-party sharing, outsourcing, cross-border transfer</h2>
+  <p>The Operator does not share your personal data with third parties, outsource its processing, or transfer it abroad.</p>
+
+  <h2>4. Retention and deletion</h2>
+  <p>All data lives only on your device. Deleting a photo or record in the app, or uninstalling the app, removes it immediately. The Operator retains no personal data.</p>
+
+  <h2>5. Your rights</h2>
+  <ul>
+    <li>Grant or revoke camera, location, and photo permissions anytime in device settings.</li>
+    <li>Delete individual photos and records inside the app.</li>
+    <li>Uninstalling the app deletes all data the app stored.</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>The Service is designed on-device — no Operator server holds your data.</li>
+    <li>All external API communication uses HTTPS encryption.</li>
+  </ul>
+
+  <h2>7. Children's privacy</h2>
+  <p>The Service is not directed at children under 14 and does not knowingly collect children's personal information.</p>
+
+  <h2>8. Advertising and analytics</h2>
+  <p>The Service currently uses no advertising SDKs or behavioral analytics. If introduced in the future, this policy will be revised with prior in-app notice.</p>
+
+  <h2>9. Privacy contact</h2>
+  <ul>
+    <li>Data protection officer: Moonsik Lim (Romantic Rider)</li>
+    <li>Contact: <a href="mailto:romanticrider.app@gmail.com">romanticrider.app@gmail.com</a></li>
+  </ul>
+
+  <h2>10. Changes to this policy</h2>
+  <p>This policy may be revised due to legal or service changes (e.g., introducing photo sharing). Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
+  <ul>
+    <li>v1.0 (2026-07-07) — Initial version</li>
+  </ul>
+
+  <footer>
+    Romantic Rider · mappic · <a href="mailto:romanticrider.app@gmail.com">romanticrider.app@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
