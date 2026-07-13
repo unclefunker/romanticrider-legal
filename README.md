@@ -3,8 +3,8 @@
 낭만라이더(Romantic Rider) 서비스의 법적 고지 문서 저장소. GitHub Pages 로 서빙됩니다.
 
 - 허브: https://unclefunker.github.io/romanticrider-legal/
-- 맵픽 개인정보처리방침 (KO): https://unclefunker.github.io/romanticrider-legal/mappic/privacy.html
-- mappic Privacy Policy (EN): https://unclefunker.github.io/romanticrider-legal/mappic/privacy-en.html
+- 시공간 다이어리 개인정보처리방침 (KO): https://unclefunker.github.io/romanticrider-legal/spacetime/privacy.html
+- Spacetime Diary Privacy Policy (EN): https://unclefunker.github.io/romanticrider-legal/spacetime/privacy-en.html
 
 ## 규칙
 
