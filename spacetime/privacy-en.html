@@ -62,7 +62,7 @@
     <span class="lang"><a href="./privacy.html">한국어</a></span>
     <div class="brand">Romantic Rider · Spacetime Diary</div>
     <h1>Spacetime Diary Privacy Policy</h1>
-    <p class="meta">Effective date: July 30, 2026 · Version 2.0</p>
+    <p class="meta">Effective date: August 14, 2026 · Version 3.0 <span style="color:var(--accent)">(announced August 7, 2026)</span></p>
   </header>
 
   <p>Romantic Rider (the "Operator") respects the privacy of users of the Spacetime Diary app (the "Service") and complies with applicable laws, including the Personal Information Protection Act of Korea and the Act on the Protection and Use of Location Information. This policy explains what information the Service handles and how.</p>
@@ -74,9 +74,13 @@
       <li>Your photos, locations, and notes are <strong>stored only on your device.</strong></li>
       <li>Coordinates are <strong>momentarily sent to external APIs</strong> to display addresses and nearby attractions; the Operator never stores them.</li>
       <li>When the app crashes, <strong>a crash log and device/app information are sent to Google (Firebase Crashlytics).</strong> <strong>Your photos, locations, and notes are not included.</strong></li>
-      <li>No advertising SDKs or behavioral analytics/tracking tools are used, and no advertising identifier (ad ID) is collected.</li>
+      <li><strong>Spacetime Diary displays banner ads</strong>, and to serve them your <strong>advertising identifier (ad ID) is sent to Google (AdMob)</strong>. You can reset or delete the ad ID at any time in your device settings.</li>
+      <li>The separate <strong>"Namhae: Spacetime Diary" edition carries no ads</strong> and collects no advertising identifier.</li>
+      <li>No behavioral analytics (tracking) tool is used to profile your usage.</li>
     </ul>
   </section>
+
+  <p><strong>Scope</strong> — This policy covers both apps published by the Operator: <strong>Spacetime Diary</strong> (nationwide) and <strong>Namhae: Spacetime Diary</strong> (the Namhae edition). The two apps process data identically <strong>except for advertising (sections 1-2, 3, and 8)</strong>; advertising and the collection of an advertising identifier apply only to Spacetime Diary.</p>
 
   <h2>1. Information we process and why</h2>
   <p>The Service processes the following information on your device only, and the Operator does not collect it. The one exception is crash logs for diagnosing app errors, which are sent to Google as described in the last row below and in section 3.</p>
@@ -103,6 +107,11 @@
       <td>Diagnosing the cause of app crashes and improving stability</td>
       <td>Google (Firebase Crashlytics) servers · 90 days</td>
     </tr>
+    <tr>
+      <td>Advertising identifier (ad ID) and ad request data<br>(Spacetime Diary only)</td>
+      <td>Serving banner ads, capping ad frequency, preventing invalid clicks</td>
+      <td>Google (AdMob) servers · per Google's advertising data policy</td>
+    </tr>
   </table>
   </div>
   <p>Each permission (camera, location, photos) is requested with your consent when you first use the related feature, and can be revoked anytime in your device settings. Denying a permission only disables that feature.</p>
@@ -115,8 +124,20 @@
     <li>App information: package name (app identifier) and app version</li>
     <li>Device and installation identifiers: Crashlytics Installation UUID, Firebase installation ID, and app session identifier (used to deduplicate reports of the same crash)</li>
   </ul>
-  <p><strong>Your photos, location data (GPS coordinates), and notes are not included in crash logs.</strong> No directly identifying information such as your name, phone number, or email address is collected, no advertising identifier (ad ID) is collected, and the app does not include the advertising ID permission (<code>AD_ID</code>).</p>
+  <p><strong>Your photos, location data (GPS coordinates), and notes are not included in crash logs.</strong> No directly identifying information such as your name, phone number, or email address is collected. Crash logs contain no advertising identifier; advertising identifiers are covered separately in section 1-2.</p>
   <p>Crash log collection happens automatically while the app runs, to keep the app stable, and the app currently provides no separate setting to opt out. If you do not want it, uninstalling the app stops any further transmission; logs already sent are deleted after the period stated in section 4.</p>
+
+  <h3>1-2. Details on advertising and the advertising identifier (Spacetime Diary only)</h3>
+  <p>To cover the cost of running the Service, the Operator displays a banner ad at the bottom of the diary list screen in <strong>Spacetime Diary</strong>. Ads are served by Google <strong>AdMob</strong> (Google LLC). When an ad is requested and displayed, the following is sent from your device to Google:</p>
+  <ul>
+    <li><strong>Advertising identifier (Android Advertising ID, AAID)</strong> — a resettable, per-device identifier</li>
+    <li>Device and app information: device model, OS version, app identifier and version, screen size, language and country settings</li>
+    <li>IP address and the <strong>approximate location</strong> (city level) inferred from it</li>
+    <li>Ad interaction records such as impressions and clicks</li>
+  </ul>
+  <p>For this purpose the app includes the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>). <strong>Namhae: Spacetime Diary carries no ads and does not include this permission.</strong></p>
+  <p><strong>Your photos, precise GPS coordinates, and notes are not included in ad requests.</strong> The Operator does not use the location data recorded by the app for advertising, nor pass it to the ad provider. What the Operator receives from Google is aggregate statistics such as impression and click counts — never information identifying an individual user.</p>
+  <p>Google's handling of data for advertising purposes is governed by <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/technologies/ads">Google advertising policies</a>. You may <strong>reset or delete your ad ID and opt out of personalized ads</strong> in your device settings (see section 5).</p>
 
   <h2>2. Coordinates sent to external APIs</h2>
   <p>When you use the features below, the coordinates needed for the feature are sent directly from your device to external APIs. They are used only to generate the response; the Operator does not collect or store them.</p>
@@ -151,12 +172,26 @@
     <tr><td>Retention period</td><td>90 days after transmission (then deleted under Google's deletion process)</td></tr>
   </table>
   </div>
+  <p>In addition, for banner advertising in <strong>Spacetime Diary</strong>, processing is outsourced as set out below and the data is transferred abroad. <strong>This does not apply to Namhae: Spacetime Diary.</strong></p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Processor (transferee)</td><td>Google LLC (Google AdMob) · <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></td></tr>
+    <tr><td>Outsourced work</td><td>Selecting and serving banner ads, measuring ad performance, preventing invalid clicks</td></tr>
+    <tr><td>Data transferred</td><td>The advertising identifier, device/app information, IP address and approximate location, and ad interaction records listed in section 1-2 (photos, precise GPS coordinates, and notes excluded)</td></tr>
+    <tr><td>Destination countries</td><td>The United States and other countries where Google operates data centers</td></tr>
+    <tr><td>Time and method of transfer</td><td>When the app requests an ad, sent from your device over HTTPS-encrypted communication</td></tr>
+    <tr><td>Purpose</td><td>Covering the cost of running the Service through advertising</td></tr>
+    <tr><td>Retention period</td><td>Per Google's advertising data retention policy (<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>)</td></tr>
+  </table>
+  </div>
   <p>The coordinates sent for map display, address lookup, and nearby attractions travel directly from your device to each API; the Operator neither collects nor retains them (see section 2).</p>
 
   <h2>4. Retention and deletion</h2>
   <ul>
     <li><strong>Your photos, locations, and notes</strong>: stored only on your device. Deleting a photo or record in the app, or uninstalling the app, removes it immediately. The Operator retains none of it.</li>
     <li><strong>Crash logs and device/app information</strong>: retained for <strong>90 days</strong> after transmission under Google's Firebase Crashlytics policy, after which Google's deletion process removes it from live and backup systems.</li>
+    <li><strong>Advertising identifier and ad request data</strong>: retained and deleted by Google under Google's advertising data policy. The Operator retains none of it separately, and once you delete your ad ID in device settings, that identifier is no longer sent with subsequent requests.</li>
   </ul>
 
   <h2>5. Your rights</h2>
@@ -165,6 +200,7 @@
     <li>Delete individual photos and records inside the app.</li>
     <li>Uninstalling the app deletes all data the app stored and stops any further crash log transmission.</li>
     <li>You may submit requests to access, delete, or suspend the processing of crash logs to the contact in section 9. Note that crash logs contain no information identifying you individually, so it may not be possible to pinpoint a specific user's records; in that case we will explain why.</li>
+    <li><strong>You may reset or delete your advertising identifier.</strong> On Android, go to <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>, depending on your device and version) to reset the ad ID or choose <strong>Delete advertising ID</strong>. After deletion, no ad ID is sent with the ads the app requests, and you will see non-personalized ads instead. The app provides no setting to turn off ads themselves.</li>
   </ul>
 
   <h2>6. Security</h2>
@@ -178,8 +214,9 @@
   <p>The Service is not directed at children under 14 and does not knowingly collect children's personal information.</p>
 
   <h2>8. Advertising and analytics</h2>
-  <p>The Service uses no advertising SDKs and no behavioral analytics (tracking) tools. It does not track or profile your usage, does not collect an advertising identifier (ad ID), and the app does not include the advertising ID permission (<code>AD_ID</code>).</p>
-  <p>The Firebase Crashlytics described in section 1-1 is a stability tool used solely for diagnosing app errors; it is not used for usage analytics or advertising. If usage analytics (e.g., Firebase Analytics) or advertising is introduced in the future, this policy will be revised with prior in-app notice.</p>
+  <p><strong>Spacetime Diary</strong> displays Google AdMob banner ads, which send your advertising identifier and related data to Google (see sections 1-2 and 3). <strong>Namhae: Spacetime Diary shows no ads and collects no advertising identifier.</strong></p>
+  <p>The Service uses no behavioral analytics tool (e.g., Firebase Analytics) to track or profile your usage. The Firebase Crashlytics described in section 1-1 is a stability tool used solely for diagnosing app errors; it is not used for usage analytics or advertising.</p>
+  <p>Ads appear in an area clearly separated from app content. They are not placed so as to interfere with your actions or to be mistaken for content. If a behavioral analytics tool is introduced, or the form or extent of advertising is expanded, this policy will be revised with prior notice.</p>
 
   <h2>9. Privacy contact</h2>
   <ul>
@@ -199,6 +236,7 @@
   <h2>11. Changes to this policy</h2>
   <p>This policy may be revised due to legal or service changes (e.g., introducing photo sharing). Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
   <ul>
+    <li>v3.0 (effective 2026-08-14 · announced 2026-08-07) — Revised for the introduction of banner advertising (Google AdMob) in Spacetime Diary: added the advertising identifier and ad request data as collected data (sections 1 and 1-2), disclosed outsourcing to and cross-border transfer to Google LLC (AdMob) (section 3), added the retention basis for advertising data (section 4), added the right to reset and delete the ad ID (section 5), rewrote the advertising and analytics section (section 8), and stated the scope covering both editions.</li>
     <li>v2.0 (effective 2026-07-30) — Revised for the introduction of an app error diagnosis tool (Firebase Crashlytics): added crash log and device/app information as collected data (sections 1 and 1-1), disclosed outsourcing to and cross-border transfer to Google LLC (section 3), added the 90-day crash log retention period (section 4), and clarified the advertising and analytics section (section 8).</li>
     <li>v1.0 (2026-07-07) — Initial version</li>
   </ul>
