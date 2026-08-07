@@ -149,7 +149,8 @@
   <p>To announce new features and service news, the Operator sends push notifications through Google's <strong>Firebase Cloud Messaging</strong>. For this, a <strong>notification token (registration token)</strong> is issued per device when the app is installed and sent to Google.</p>
   <ul>
     <li>The <strong>notification token</strong> identifies "this app on this device". It is not linked to your name, phone number, or email, and it becomes invalid when you uninstall the app or reset the device.</li>
-    <li>The app subscribes to a single <strong>topic</strong> according to which app is installed (Spacetime Diary or Namhae: Spacetime Diary). The Operator sends only to that topic and <strong>never targets an individual user.</strong></li>
+    <li><strong>Only if you consent to notifications</strong> does the app subscribe to a single <strong>topic</strong> according to which app is installed (Spacetime Diary or Namhae: Spacetime Diary). The Operator sends only to that topic and <strong>never targets an individual user.</strong> Withdrawing consent unsubscribes you, so you are <strong>excluded from delivery</strong> altogether.</li>
+    <li>Your consent state and the time it changed are <strong>stored only on your device</strong> and are never transmitted.</li>
     <li><strong>Your photos, locations, and notes have nothing to do with notifications.</strong> Notification content is written by the Operator and is not personalized using your data.</li>
   </ul>
   <p>Displaying notifications requires your <strong>notification permission</strong> (Android 13 and above). Declining does not affect any other feature of the app, and you can change the setting on your device at any time (see section 5).</p>
@@ -230,7 +231,7 @@
     <li>Delete individual photos and records inside the app.</li>
     <li>Uninstalling the app deletes all data the app stored and stops any further crash log transmission.</li>
     <li>You may submit requests to access, delete, or suspend the processing of crash logs to the contact in section 9. Note that crash logs contain no information identifying you individually, so it may not be possible to pinpoint a specific user's records; in that case we will explain why.</li>
-    <li><strong>You may turn notifications off at any time.</strong> On your device, go to <em>Settings → Apps → (app name) → Notifications</em> and turn them off; notifications stop appearing immediately. Uninstalling the app also stops delivery.</li>
+    <li><strong>You may withdraw your consent at any time.</strong> Turning off <em>Settings → Notifications</em> inside the app unsubscribes you from the topic, so <strong>no notification is sent to you at all</strong> (delivery stops, not just display). Turning them off in your device settings (<em>Settings → Apps → (app name) → Notifications</em>) also stops them appearing, and uninstalling the app stops delivery.</li>
     <li><strong>You may reset or delete your advertising identifier.</strong> On Android, go to <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>, depending on your device and version) to reset the ad ID or choose <strong>Delete advertising ID</strong>. After deletion, no ad ID is sent with the ads the app requests, and you will see non-personalized ads instead. The app provides no setting to turn off ads themselves.</li>
   </ul>
 
