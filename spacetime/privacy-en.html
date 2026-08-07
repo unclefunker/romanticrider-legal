@@ -62,7 +62,7 @@
     <span class="lang"><a href="./privacy.html">한국어</a></span>
     <div class="brand">Romantic Rider · Spacetime Diary</div>
     <h1>Spacetime Diary Privacy Policy</h1>
-    <p class="meta">Effective date: August 14, 2026 · Version 3.0 <span style="color:var(--accent)">(announced August 7, 2026)</span></p>
+    <p class="meta">Effective date: August 14, 2026 · Version 3.1 <span style="color:var(--accent)">(announced August 7, 2026)</span></p>
   </header>
 
   <p>Romantic Rider (the "Operator") respects the privacy of users of the Spacetime Diary app (the "Service") and complies with applicable laws, including the Personal Information Protection Act of Korea and the Act on the Protection and Use of Location Information. This policy explains what information the Service handles and how.</p>
@@ -76,11 +76,12 @@
       <li>When the app crashes, <strong>a crash log and device/app information are sent to Google (Firebase Crashlytics).</strong> <strong>Your photos, locations, and notes are not included.</strong></li>
       <li><strong>Spacetime Diary displays banner ads</strong>, and to serve them your <strong>advertising identifier (ad ID) is sent to Google (AdMob)</strong>. You can reset or delete the ad ID at any time in your device settings.</li>
       <li>The separate <strong>"Namhae: Spacetime Diary" edition carries no ads</strong> and collects no advertising identifier.</li>
+      <li>To send you news about new features, a per-device <strong>notification token is sent to Google (Firebase)</strong>. Notifications appear only if you allow them, and you can turn them off in your device settings at any time.</li>
       <li>No behavioral analytics (tracking) tool is used to profile your usage.</li>
     </ul>
   </section>
 
-  <p><strong>Scope</strong> — This policy covers both apps published by the Operator: <strong>Spacetime Diary</strong> (nationwide) and <strong>Namhae: Spacetime Diary</strong> (the Namhae edition). The two apps process data identically <strong>except for advertising (sections 1-2, 3, and 8)</strong>; advertising and the collection of an advertising identifier apply only to Spacetime Diary.</p>
+  <p><strong>Scope</strong> — This policy covers both apps published by the Operator: <strong>Spacetime Diary</strong> (nationwide) and <strong>Namhae: Spacetime Diary</strong> (the Namhae edition). The two apps process data identically <strong>except for advertising (sections 1-2, 3, and 8)</strong>; advertising and the collection of an advertising identifier apply only to Spacetime Diary. Push notifications (section 1-3) apply to both apps.</p>
 
   <h2>1. Information we process and why</h2>
   <p>The Service processes the following information on your device only, and the Operator does not collect it. The one exception is crash logs for diagnosing app errors, which are sent to Google as described in the last row below and in section 3.</p>
@@ -112,6 +113,11 @@
       <td>Serving banner ads, capping ad frequency, preventing invalid clicks</td>
       <td>Google (AdMob) servers · per Google's advertising data policy</td>
     </tr>
+    <tr>
+      <td>Notification token (Firebase registration token)</td>
+      <td>Delivering push notifications about new features and service news</td>
+      <td>Google (Firebase Cloud Messaging) servers · until you uninstall the app</td>
+    </tr>
   </table>
   </div>
   <p>Each permission (camera, location, photos) is requested with your consent when you first use the related feature, and can be revoked anytime in your device settings. Denying a permission only disables that feature.</p>
@@ -138,6 +144,16 @@
   <p>For this purpose the app includes the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>). <strong>Namhae: Spacetime Diary carries no ads and does not include this permission.</strong></p>
   <p><strong>Your photos, precise GPS coordinates, and notes are not included in ad requests.</strong> The Operator does not use the location data recorded by the app for advertising, nor pass it to the ad provider. What the Operator receives from Google is aggregate statistics such as impression and click counts — never information identifying an individual user.</p>
   <p>Google's handling of data for advertising purposes is governed by <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/technologies/ads">Google advertising policies</a>. You may <strong>reset or delete your ad ID and opt out of personalized ads</strong> in your device settings (see section 5).</p>
+
+  <h3>1-3. Details on push notifications</h3>
+  <p>To announce new features and service news, the Operator sends push notifications through Google's <strong>Firebase Cloud Messaging</strong>. For this, a <strong>notification token (registration token)</strong> is issued per device when the app is installed and sent to Google.</p>
+  <ul>
+    <li>The <strong>notification token</strong> identifies "this app on this device". It is not linked to your name, phone number, or email, and it becomes invalid when you uninstall the app or reset the device.</li>
+    <li>The app subscribes to a single <strong>topic</strong> according to which app is installed (Spacetime Diary or Namhae: Spacetime Diary). The Operator sends only to that topic and <strong>never targets an individual user.</strong></li>
+    <li><strong>Your photos, locations, and notes have nothing to do with notifications.</strong> Notification content is written by the Operator and is not personalized using your data.</li>
+  </ul>
+  <p>Displaying notifications requires your <strong>notification permission</strong> (Android 13 and above). Declining does not affect any other feature of the app, and you can change the setting on your device at any time (see section 5).</p>
+  <p>The Operator does <strong>not send advertising or promotional messages</strong> through this channel — only service news and update announcements. Should promotional messages ever be sent, separate prior consent will be obtained as required by the Korean Act on Promotion of Information and Communications Network Utilization and Information Protection.</p>
 
   <h2>2. Coordinates sent to external APIs</h2>
   <p>When you use the features below, the coordinates needed for the feature are sent directly from your device to external APIs. They are used only to generate the response; the Operator does not collect or store them.</p>
@@ -185,12 +201,26 @@
     <tr><td>Retention period</td><td>Per Google's advertising data retention policy (<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>)</td></tr>
   </table>
   </div>
+  <p>In addition, for delivering push notifications, processing is outsourced as set out below and the data is transferred abroad. <strong>This applies to both apps.</strong></p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Processor (transferee)</td><td>Google LLC (Firebase Cloud Messaging) · <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Outsourced work</td><td>Issuing and managing notification tokens and delivering push notification messages</td></tr>
+    <tr><td>Data transferred</td><td>The notification token and device/app information described in section 1-3 (photos, locations, and notes excluded)</td></tr>
+    <tr><td>Destination countries</td><td>The United States and other countries where Google operates data centers</td></tr>
+    <tr><td>Time and method of transfer</td><td>When the token is issued at install or launch, and when a notification is sent, over HTTPS-encrypted communication</td></tr>
+    <tr><td>Purpose</td><td>Announcing new features and service news</td></tr>
+    <tr><td>Retention period</td><td>Until the app is uninstalled or the token is refreshed or expires</td></tr>
+  </table>
+  </div>
   <p>The coordinates sent for map display, address lookup, and nearby attractions travel directly from your device to each API; the Operator neither collects nor retains them (see section 2).</p>
 
   <h2>4. Retention and deletion</h2>
   <ul>
     <li><strong>Your photos, locations, and notes</strong>: stored only on your device. Deleting a photo or record in the app, or uninstalling the app, removes it immediately. The Operator retains none of it.</li>
     <li><strong>Crash logs and device/app information</strong>: retained for <strong>90 days</strong> after transmission under Google's Firebase Crashlytics policy, after which Google's deletion process removes it from live and backup systems.</li>
+    <li><strong>Notification token</strong>: uninstalling the app invalidates the token, after which no notification is delivered. Google's stored copy is cleared through its token expiry and refresh process.</li>
     <li><strong>Advertising identifier and ad request data</strong>: retained and deleted by Google under Google's advertising data policy. The Operator retains none of it separately, and once you delete your ad ID in device settings, that identifier is no longer sent with subsequent requests.</li>
   </ul>
 
@@ -200,6 +230,7 @@
     <li>Delete individual photos and records inside the app.</li>
     <li>Uninstalling the app deletes all data the app stored and stops any further crash log transmission.</li>
     <li>You may submit requests to access, delete, or suspend the processing of crash logs to the contact in section 9. Note that crash logs contain no information identifying you individually, so it may not be possible to pinpoint a specific user's records; in that case we will explain why.</li>
+    <li><strong>You may turn notifications off at any time.</strong> On your device, go to <em>Settings → Apps → (app name) → Notifications</em> and turn them off; notifications stop appearing immediately. Uninstalling the app also stops delivery.</li>
     <li><strong>You may reset or delete your advertising identifier.</strong> On Android, go to <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>, depending on your device and version) to reset the ad ID or choose <strong>Delete advertising ID</strong>. After deletion, no ad ID is sent with the ads the app requests, and you will see non-personalized ads instead. The app provides no setting to turn off ads themselves.</li>
   </ul>
 
@@ -236,6 +267,7 @@
   <h2>11. Changes to this policy</h2>
   <p>This policy may be revised due to legal or service changes (e.g., introducing photo sharing). Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
   <ul>
+    <li>v3.1 (effective 2026-08-14 · announced 2026-08-07) — Revised for the introduction of push notifications: added the notification token as collected data (sections 1 and 1-3), disclosed outsourcing to and cross-border transfer to Google LLC (Firebase Cloud Messaging) (section 3), added the token retention period (section 4) and the right to turn notifications off (section 5), and stated that no promotional messages are sent without separate consent. <strong>Takes effect on the same day as v3.0.</strong></li>
     <li>v3.0 (effective 2026-08-14 · announced 2026-08-07) — Revised for the introduction of banner advertising (Google AdMob) in Spacetime Diary: added the advertising identifier and ad request data as collected data (sections 1 and 1-2), disclosed outsourcing to and cross-border transfer to Google LLC (AdMob) (section 3), added the retention basis for advertising data (section 4), added the right to reset and delete the ad ID (section 5), rewrote the advertising and analytics section (section 8), and stated the scope covering both editions.</li>
     <li>v2.0 (effective 2026-07-30) — Revised for the introduction of an app error diagnosis tool (Firebase Crashlytics): added crash log and device/app information as collected data (sections 1 and 1-1), disclosed outsourcing to and cross-border transfer to Google LLC (section 3), added the 90-day crash log retention period (section 4), and clarified the advertising and analytics section (section 8).</li>
     <li>v1.0 (2026-07-07) — Initial version</li>
