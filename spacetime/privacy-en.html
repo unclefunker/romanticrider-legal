@@ -75,13 +75,13 @@
       <li>Coordinates are <strong>momentarily sent to external APIs</strong> to display addresses and nearby attractions; the Operator never stores them.</li>
       <li>When the app crashes, <strong>a crash log and device/app information are sent to Google (Firebase Crashlytics).</strong> <strong>Your photos, locations, and notes are not included.</strong></li>
       <li><strong>Spacetime Diary displays banner ads</strong>, and to serve them your <strong>advertising identifier (ad ID) is sent to Google (AdMob)</strong>. You can reset or delete the ad ID at any time in your device settings.</li>
-      <li>The separate <strong>"Namhae: Spacetime Diary" edition carries no ads</strong> and collects no advertising identifier.</li>
+      <li>The Namhae edition, <strong>Namhae: Spacetime Diary</strong>, is governed by its own separate privacy policy (in Korean).</li>
       <li>To send you news about new features, a per-device <strong>notification token is sent to Google (Firebase)</strong>. Notifications appear only if you allow them, and you can turn them off in your device settings at any time.</li>
       <li>No behavioral analytics (tracking) tool is used to profile your usage.</li>
     </ul>
   </section>
 
-  <p><strong>Scope</strong> — This policy covers both apps published by the Operator: <strong>Spacetime Diary</strong> (nationwide) and <strong>Namhae: Spacetime Diary</strong> (the Namhae edition). The two apps process data identically <strong>except for advertising (sections 1-2, 3, and 8)</strong>; advertising and the collection of an advertising identifier apply only to Spacetime Diary. Push notifications (section 1-3) apply to both apps.</p>
+  <p><strong>Scope</strong> — This policy covers <strong>Spacetime Diary</strong> (the nationwide edition) published by the Operator. The Namhae edition, <strong>Namhae: Spacetime Diary</strong>, is governed by a <a href="../namhae/privacy.html">separate privacy policy</a> (in Korean).</p>
 
   <h2>1. Information we process and why</h2>
   <p>The Service processes the following information on your device only, and the Operator does not collect it. The one exception is crash logs for diagnosing app errors, which are sent to Google as described in the last row below and in section 3.</p>
@@ -109,7 +109,7 @@
       <td>Google (Firebase Crashlytics) servers · 90 days</td>
     </tr>
     <tr>
-      <td>Advertising identifier (ad ID) and ad request data<br>(Spacetime Diary only)</td>
+      <td>Advertising identifier (ad ID) and ad request data</td>
       <td>Serving banner ads, capping ad frequency, preventing invalid clicks</td>
       <td>Google (AdMob) servers · per Google's advertising data policy</td>
     </tr>
@@ -133,15 +133,15 @@
   <p><strong>Your photos, location data (GPS coordinates), and notes are not included in crash logs.</strong> No directly identifying information such as your name, phone number, or email address is collected. Crash logs contain no advertising identifier; advertising identifiers are covered separately in section 1-2.</p>
   <p>Crash log collection happens automatically while the app runs, to keep the app stable, and the app currently provides no separate setting to opt out. If you do not want it, uninstalling the app stops any further transmission; logs already sent are deleted after the period stated in section 4.</p>
 
-  <h3>1-2. Details on advertising and the advertising identifier (Spacetime Diary only)</h3>
-  <p>To cover the cost of running the Service, the Operator displays a banner ad at the bottom of the diary list screen in <strong>Spacetime Diary</strong>. Ads are served by Google <strong>AdMob</strong> (Google LLC). When an ad is requested and displayed, the following is sent from your device to Google:</p>
+  <h3>1-2. Details on advertising and the advertising identifier</h3>
+  <p>To cover the cost of running the Service, the Operator displays a banner ad at the bottom of the diary list screen. Ads are served by Google <strong>AdMob</strong> (Google LLC). When an ad is requested and displayed, the following is sent from your device to Google:</p>
   <ul>
     <li><strong>Advertising identifier (Android Advertising ID, AAID)</strong> — a resettable, per-device identifier</li>
     <li>Device and app information: device model, OS version, app identifier and version, screen size, language and country settings</li>
     <li>IP address and the <strong>approximate location</strong> (city level) inferred from it</li>
     <li>Ad interaction records such as impressions and clicks</li>
   </ul>
-  <p>For this purpose the app includes the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>). <strong>Namhae: Spacetime Diary carries no ads and does not include this permission.</strong></p>
+  <p>For this purpose the app includes the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>).</p>
   <p><strong>Your photos, precise GPS coordinates, and notes are not included in ad requests.</strong> The Operator does not use the location data recorded by the app for advertising, nor pass it to the ad provider. What the Operator receives from Google is aggregate statistics such as impression and click counts — never information identifying an individual user.</p>
   <p>Google's handling of data for advertising purposes is governed by <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/technologies/ads">Google advertising policies</a>. You may <strong>reset or delete your ad ID and opt out of personalized ads</strong> in your device settings (see section 5).</p>
 
@@ -149,7 +149,7 @@
   <p>To announce new features and service news, the Operator sends push notifications through Google's <strong>Firebase Cloud Messaging</strong>. For this, a <strong>notification token (registration token)</strong> is issued per device when the app is installed and sent to Google.</p>
   <ul>
     <li>The <strong>notification token</strong> identifies "this app on this device". It is not linked to your name, phone number, or email, and it becomes invalid when you uninstall the app or reset the device.</li>
-    <li><strong>Only if you consent to notifications</strong> does the app subscribe to a single <strong>topic</strong> according to which app is installed (Spacetime Diary or Namhae: Spacetime Diary). The Operator sends only to that topic and <strong>never targets an individual user.</strong> Withdrawing consent unsubscribes you, so you are <strong>excluded from delivery</strong> altogether.</li>
+    <li><strong>Only if you consent to notifications</strong> does the app subscribe to a single <strong>topic</strong> for this app. The Operator sends only to that topic and <strong>never targets an individual user.</strong> Withdrawing consent unsubscribes you, so you are <strong>excluded from delivery</strong> altogether.</li>
     <li>Your consent state and the time it changed are <strong>stored only on your device</strong> and are never transmitted.</li>
     <li><strong>Your photos, locations, and notes have nothing to do with notifications.</strong> Notification content is written by the Operator and is not personalized using your data.</li>
   </ul>
@@ -189,7 +189,7 @@
     <tr><td>Retention period</td><td>90 days after transmission (then deleted under Google's deletion process)</td></tr>
   </table>
   </div>
-  <p>In addition, for banner advertising in <strong>Spacetime Diary</strong>, processing is outsourced as set out below and the data is transferred abroad. <strong>This does not apply to Namhae: Spacetime Diary.</strong></p>
+  <p>In addition, for banner advertising, processing is outsourced as set out below and the data is transferred abroad.</p>
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Details</th></tr>
@@ -202,7 +202,7 @@
     <tr><td>Retention period</td><td>Per Google's advertising data retention policy (<a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>)</td></tr>
   </table>
   </div>
-  <p>In addition, for delivering push notifications, processing is outsourced as set out below and the data is transferred abroad. <strong>This applies to both apps.</strong></p>
+  <p>In addition, for delivering push notifications, processing is outsourced as set out below and the data is transferred abroad.</p>
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Details</th></tr>
@@ -246,7 +246,7 @@
   <p>The Service is not directed at children under 14 and does not knowingly collect children's personal information.</p>
 
   <h2>8. Advertising and analytics</h2>
-  <p><strong>Spacetime Diary</strong> displays Google AdMob banner ads, which send your advertising identifier and related data to Google (see sections 1-2 and 3). <strong>Namhae: Spacetime Diary shows no ads and collects no advertising identifier.</strong></p>
+  <p>The Service displays Google AdMob banner ads, which send your advertising identifier and related data to Google (see sections 1-2 and 3).</p>
   <p>The Service uses no behavioral analytics tool (e.g., Firebase Analytics) to track or profile your usage. The Firebase Crashlytics described in section 1-1 is a stability tool used solely for diagnosing app errors; it is not used for usage analytics or advertising.</p>
   <p>Ads appear in an area clearly separated from app content. They are not placed so as to interfere with your actions or to be mistaken for content. If a behavioral analytics tool is introduced, or the form or extent of advertising is expanded, this policy will be revised with prior notice.</p>
 
@@ -268,6 +268,7 @@
   <h2>11. Changes to this policy</h2>
   <p>This policy may be revised due to legal or service changes (e.g., introducing photo sharing). Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
   <ul>
+    <li>2026-08-09 wording alignment — Namhae: Spacetime Diary is now governed by a <a href="../namhae/privacy.html">separate policy</a>; the scope of this policy is narrowed to Spacetime Diary alone (no change in data processing)</li>
     <li>v3.1 (effective 2026-08-14 · announced 2026-08-07) — Revised for the introduction of push notifications: added the notification token as collected data (sections 1 and 1-3), disclosed outsourcing to and cross-border transfer to Google LLC (Firebase Cloud Messaging) (section 3), added the token retention period (section 4) and the right to turn notifications off (section 5), and stated that no promotional messages are sent without separate consent. <strong>Takes effect on the same day as v3.0.</strong></li>
     <li>v3.0 (effective 2026-08-14 · announced 2026-08-07) — Revised for the introduction of banner advertising (Google AdMob) in Spacetime Diary: added the advertising identifier and ad request data as collected data (sections 1 and 1-2), disclosed outsourcing to and cross-border transfer to Google LLC (AdMob) (section 3), added the retention basis for advertising data (section 4), added the right to reset and delete the ad ID (section 5), rewrote the advertising and analytics section (section 8), and stated the scope covering both editions.</li>
     <li>v2.0 (effective 2026-07-30) — Revised for the introduction of an app error diagnosis tool (Firebase Crashlytics): added crash log and device/app information as collected data (sections 1 and 1-1), disclosed outsourcing to and cross-border transfer to Google LLC (section 3), added the 90-day crash log retention period (section 4), and clarified the advertising and analytics section (section 8).</li>
