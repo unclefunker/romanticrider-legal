@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>로그인 안내 — 낭만라이더</title>
+<meta name="description" content="시공간 다이어리 · 남해: 시공간 다이어리 로그인이 완료되지 않았을 때의 안내 — 낭만라이더">
+<style>
+  :root {
+    --bg: #FAF7F2;
+    --surface: #FFFFFF;
+    --ink: #1F2530;
+    --ink-muted: #5A6473;
+    --accent: #2D6675;
+    --outline: #D1C7B5;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.75;
+    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+    display: grid;
+    min-height: 100dvh;
+    place-items: center;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 2rem 1.25rem; text-align: center; }
+  .brand { font-size: 0.85rem; letter-spacing: 0.08em; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.4rem, 1.2rem + 1.2vw, 1.9rem); margin: 0.5rem 0 1rem; line-height: 1.35; }
+  p { color: var(--ink-muted); margin: 0.5rem 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin-top: 1.25rem;
+    text-align: left;
+  }
+  .card ol { padding-left: 1.3rem; }
+  .card li { margin: 0.4rem 0; color: var(--ink); }
+  .hint { font-size: 0.88em; margin-top: 1.25rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 2rem; color: var(--ink-muted); font-size: 0.82rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11161D; --surface: #1A2029; --ink: #ECEEF2; --ink-muted: #B9C0CC; --accent: #5DA7B6; --outline: #3D4654; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Romantic Rider</div>
+  <h1>로그인이 완료되지 않았어요</h1>
+  <p>로그인 시간이 지났거나 과정이 중간에 멈춘 것 같습니다.<br>계정에는 아무 일도 일어나지 않았으니 안심하세요.</p>
+
+  <div class="card">
+    <ol>
+      <li>이 창을 닫아 주세요.</li>
+      <li><strong>앱으로 돌아가</strong> 로그인을 다시 시도해 주세요.</li>
+      <li>로그인 화면에서는 <strong>너무 오래 머무르지 않고 바로 진행</strong>하면 이런 화면을 만나지 않습니다.</li>
+    </ol>
+  </div>
+
+  <p class="hint">같은 문제가 반복되면 <a href="mailto:romanticrider.app@gmail.com?subject=%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EB%AC%B8%EC%9D%98">romanticrider.app@gmail.com</a> 으로 알려주세요.</p>
+
+  <footer>낭만라이더 · 시공간 다이어리 / 남해: 시공간 다이어리 · <a href="./index.html">홈</a></footer>
+</main>
+</body>
+</html>
