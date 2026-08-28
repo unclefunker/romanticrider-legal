@@ -222,10 +222,10 @@
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Detail</th></tr>
-    <tr><td>Processor (transferee)</td><td>Cloudflare, Inc. (R2 object storage) · <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td></tr>
+    <tr><td>Processor (transferee)</td><td><strong>Cloudflare, Inc.</strong> (R2 object storage)<br>Contact: 101 Townsend Street, San Francisco, CA 94107, USA · legal@cloudflare.com<br><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td></tr>
     <tr><td>Entrusted work</td><td>Storing and delivering shared photo image files</td></tr>
     <tr><td>Items transferred</td><td>The shared photo images described in Section 1-4 (metadata removed — no name, contact details or location coordinates)</td></tr>
-    <tr><td>Destination countries</td><td>Countries hosting Cloudflare data centers in the Asia-Pacific region, such as Singapore (storage location hint = APAC; Cloudflare's policy does not allow country-level designation)</td></tr>
+    <tr><td>Destination countries</td><td>Countries hosting Cloudflare data centers in the Asia-Pacific region (the bucket's storage location setting is <code>APAC</code>). For R2, Cloudflare offers <strong>only continent- or region-level settings and does not support country-level designation</strong>, and even that setting is best effort rather than a guarantee. We therefore cannot name a specific country.</td></tr>
     <tr><td>Time and method of transfer</td><td>At the moment you choose to publish a photo, over HTTPS-encrypted communication</td></tr>
     <tr><td>Purpose</td><td>Serving images for the per-place shared album</td></tr>
     <tr><td>Retention period</td><td>Until you delete the photo or it is pushed out of the per-place limit (destroyed from storage upon deletion)</td></tr>
@@ -236,7 +236,7 @@
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Detail</th></tr>
-    <tr><td>Processor (transferee)</td><td>Google LLC (Firebase Crashlytics) · <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Processor (transferee)</td><td><strong>Google LLC</strong> (Firebase Crashlytics)<br>Contact: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · dpo-google@google.com<br><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
     <tr><td>Entrusted work</td><td>Collecting, storing and analyzing crash logs and providing error reports</td></tr>
     <tr><td>Items transferred</td><td>The crash logs, device/app information and device/installation identifiers described in Section 1-1 (excluding photos, locations and memos)</td></tr>
     <tr><td>Destination countries</td><td>The United States and other countries hosting Google data centers</td></tr>
@@ -250,7 +250,7 @@
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Detail</th></tr>
-    <tr><td>Processor (transferee)</td><td>Google LLC (Google AdMob) · <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></td></tr>
+    <tr><td>Processor (transferee)</td><td><strong>Google LLC</strong> (Google AdMob)<br>Contact: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · dpo-google@google.com<br><a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></td></tr>
     <tr><td>Entrusted work</td><td>Selecting and serving banner ads, measuring ad performance, preventing invalid clicks</td></tr>
     <tr><td>Items transferred</td><td>The advertising identifier (Ad ID), device/app information, IP address and approximate location, and ad interaction records described in Section 1-5 (excluding photos, precise GPS coordinates and memos)</td></tr>
     <tr><td>Destination countries</td><td>The United States and other countries hosting Google data centers</td></tr>
@@ -264,7 +264,7 @@
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Detail</th></tr>
-    <tr><td>Processor (transferee)</td><td>Google LLC (Firebase Cloud Messaging) · <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Processor (transferee)</td><td><strong>Google LLC</strong> (Firebase Cloud Messaging)<br>Contact: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · dpo-google@google.com<br><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
     <tr><td>Entrusted work</td><td>Issuing and managing notification tokens and delivering push notification messages</td></tr>
     <tr><td>Items transferred</td><td>The notification token and device/app information described in Section 1-2 (excluding photos, locations and memos)</td></tr>
     <tr><td>Destination countries</td><td>The United States and other countries hosting Google data centers</td></tr>
@@ -277,6 +277,35 @@
   <h3>3-6. Social login authentication (Google · Kakao) <span class="badge">currently Namhae edition</span></h3>
   <p>During sign-in you authenticate directly on the authentication screen of Google LLC or Kakao Corp.; the processing of personal information in that step follows each company's privacy policy (<a href="https://policies.google.com/privacy">Google</a> · <a href="https://www.kakao.com/policy/privacy">Kakao</a>). The information the Operator receives after authentication is as described in Section 1-3.</p>
   <p>Transmissions for map display, address conversion, tourism lookups and the Nangman Namhae link are transient communications used only to generate a response; the Operator does not collect or retain that information (see Section 2).</p>
+
+  <h3>3-7. How to refuse an overseas transfer, the procedure, and its effect</h3>
+  <p>You may refuse the overseas transfers described in 3-2 through 3-5. You refuse by <strong>not using the feature that causes the transfer</strong>; this takes effect immediately and requires no application procedure. For questions, use the contact in section 8.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Transfer</th><th>How to refuse</th><th>Effect of refusing</th></tr>
+    <tr>
+      <td>3-2. Shared photo images (Cloudflare)</td>
+      <td>If you do not use photo sharing, no transfer occurs. Photos you have already shared are destroyed in the storage when you delete them in the app.</td>
+      <td><strong>Only per-place photo sharing becomes unavailable.</strong> Capture, overlay, map display and the other features continue to work.</td>
+    </tr>
+    <tr>
+      <td>3-3. Crash logs (Google)</td>
+      <td>Deleting the app stops crash logs from being sent. There is no separate opt-out setting inside the app.</td>
+      <td>Because this means deleting the app, <strong>the whole Service becomes unavailable.</strong> Crash logs are used only for error diagnosis and contain no information that identifies you.</td>
+    </tr>
+    <tr>
+      <td>3-4. Banner advertising (Google, nationwide edition only)</td>
+      <td>On your device, go to <em>Settings → Privacy → Ads</em> and <strong>delete the advertising ID</strong>; it will no longer be sent with ad requests (see section 5). To stop ad requests entirely you must delete the app.</td>
+      <td>Deleting the advertising ID means you see <strong>non-personalized ads instead of personalized ones</strong>, with no effect on other features. Advertising funds the free service, so there is no setting that turns ads off.</td>
+    </tr>
+    <tr>
+      <td>3-5. Push notifications (Google)</td>
+      <td>Turn off <em>Settings → Notifications</em> in the app to unsubscribe from the topic, and no further notifications are sent. Deleting the app also stops delivery (see section 5).</td>
+      <td><strong>You will not receive news about new features or the Service.</strong> No other feature is affected.</td>
+    </tr>
+  </table>
+  </div>
+  <p>Even after you refuse, information already transferred and held by a processor is destroyed according to the retention period stated for each item. To remove your account and shared photos immediately, use the account deletion procedure in section 5.</p>
 
   <h2>4. Retention period and destruction</h2>
   <ul>
@@ -345,6 +374,7 @@
   <h2 id="history">10. Changes to this Policy</h2>
   <p>This Policy may be amended in line with changes in law or the Service. Where a feature that changes the processing of personal information is introduced, <strong>this Policy will be amended before that feature launches</strong>, and <strong>separate consent</strong> will be obtained for items requiring consent by law. Amendments are announced in the app or on this page at least 7 days before they take effect (30 days for material changes).</p>
   <ul>
+    <li>2026-08-28 overseas-transfer disclosure expanded — added the transferee's <strong>contact details</strong> and <strong>how to refuse a transfer, the procedure and its effect</strong>, and corrected the description of Cloudflare's destination countries to match what was measured (Personal Information Protection Act, Article 28-8(1)3(a) and 28-8(2); no change adverse to users)</li>
     <li>Unified Edition v1.0 (effective 2026-09-10) — enacted as a single policy covering both apps, replacing the former Spacetime Diary Privacy Policy (v3.1) and Namhae: Spacetime Diary Privacy Policy (v1.0) on the effective date. Reflects the introduction of photo sharing and social login: new processing of account information (Section 1-3) and shared photos (Section 1-4); the Namhae edition's tourism information now served via the Operator's server (Section 2 — lookup coordinates are not stored); Supabase (domestic) and Cloudflare (overseas transfer) added as processors (Section 3); account deletion procedure added (Section 5); per-app differences consolidated in Appendix A.</li>
     <li>Earlier revision history — nationwide edition: v1.0 (enacted 2026-07-07) · v2.0 (2026-07-30, Crashlytics) · v3.0/v3.1 (2026-08-14, AdMob ads and push notifications) / Namhae edition: v1.0 (2026-08-09, enacted separately)</li>
   </ul>
