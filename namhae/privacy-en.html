@@ -64,7 +64,7 @@
     <span class="lang"><a href="./privacy.html">한국어</a></span>
     <div class="brand">Romantic Rider · Namhae: Spacetime Diary</div>
     <h1>Namhae: Spacetime Diary Privacy Policy</h1>
-    <p class="meta">Effective: August 9, 2026 · Version 1.0 · The Korean text is the authoritative version; this translation is provided for convenience.</p>
+    <p class="meta">Effective: September 2, 2026 · Version 2.0 · The Korean text is the authoritative version; this translation is provided for convenience.</p>
   </header>
 
   <p>Romantic Rider (the "Operator") values the privacy of everyone who uses the Namhae: Spacetime Diary app (the "Service") and complies with applicable laws, including the Personal Information Protection Act and the Act on the Protection and Use of Location Information of the Republic of Korea. This policy explains what data the Service handles and how.</p>
@@ -72,9 +72,11 @@
   <section class="summary">
     <h2>At a glance</h2>
     <ul>
-      <li>Namhae: Spacetime Diary has <strong>no sign-up or login, and no Operator server that stores your personal data.</strong></li>
-      <li>Photos, location, notes, and commemorative stamps you create are <strong>stored only on your device.</strong></li>
-      <li>Coordinates are <strong>sent transiently to external APIs</strong> for address display and Namhae tourism information; the Operator does not store them.</li>
+      <li>Namhae: Spacetime Diary <strong>can be used without signing in.</strong> Photos, location, notes, and commemorative stamps you create are <strong>stored only on your device by default.</strong></li>
+      <li>You sign in with a Google or Kakao account <strong>only if you want to use photo sharing.</strong> In that case <strong>minimal account information such as your email address and nickname is stored on the Operator&#39;s server.</strong></li>
+      <li><strong>Only photos you mark as &quot;public&quot; yourself</strong> are uploaded to the Operator&#39;s server and shown to other users. <strong>Metadata (EXIF), including location, is removed</strong> from uploaded photos.</li>
+      <li>A photo you make public is <strong>displayed together with the nickname you choose.</strong> You can change your nickname at any time, and your email address and profile image are not made public.</li>
+      <li>Coordinates are <strong>sent transiently to external APIs or to the Operator&#39;s server</strong> for address display and Namhae tourism information; the Operator <strong>does not store the coordinates used for those lookups.</strong></li>
       <li>If the app crashes, <strong>a crash log with device and app information is sent to Google (Firebase Crashlytics)</strong>. It contains <strong>no photos, location data, or notes.</strong></li>
       <li><strong>This app shows no ads and collects no advertising identifier (ad ID).</strong></li>
       <li>To deliver news about new features by <strong>push notification</strong>, a per-device <strong>notification token is sent to Google (Firebase)</strong>. Notifications appear only if you allow them and can be turned off in device settings at any time.</li>
@@ -85,7 +87,7 @@
   <p><strong>Scope</strong> — This policy covers <strong>Namhae: Spacetime Diary</strong> (the Namhae edition) published by the Operator. The nationwide edition, <strong>Spacetime Diary</strong>, is governed by a <a href="../spacetime/privacy-en.html">separate privacy policy</a>.</p>
 
   <h2>1. Data handled and purposes</h2>
-  <p>The Service processes the data below only on your device; the Operator does not collect it. The one exception is the crash log used for error diagnosis, which is sent to Google as described in the table and in section 3.</p>
+  <p>The Service processes the data below <strong>on your device by default.</strong> The exceptions are: <strong>(1) account information, if you sign in for photo sharing; (2) photos you mark as &quot;public&quot; yourself and their accompanying information; and (3) report and block records</strong> &mdash; these are stored on the Operator&#39;s server &mdash; and <strong>(4) crash logs</strong> and <strong>(5) push notification tokens</strong>, which are sent to Google. See the table below and sections 1-3, 1-4 and 3.</p>
   <div class="table-wrap">
   <table>
     <tr><th>Data</th><th>Purpose</th><th>Storage / retention</th></tr>
@@ -103,6 +105,21 @@
       <td>Photo library (gallery) access</td>
       <td>Importing existing geotagged photos into the map diary (only when you run it)</td>
       <td>On device · until you delete it</td>
+    </tr>
+    <tr>
+      <td>Account information <em>(if you sign in for photo sharing)</em><br>email address, nickname, profile image (optional), user identifier from the social login provider</td>
+      <td>Providing photo sharing (verifying your right to manage and delete your own photos), preventing abuse, responding to inquiries</td>
+      <td>Operator&#39;s server (Supabase, Seoul region, Republic of Korea) &middot; until account deletion</td>
+    </tr>
+    <tr>
+      <td>Shared photos and accompanying information <em>(only photos you mark as &quot;public&quot;)</em><br>image with metadata (EXIF) removed, capture time, linked landmark, <strong>the nickname displayed</strong></td>
+      <td>Providing the per-place shared album (making photos viewable by other users)</td>
+      <td>Operator&#39;s server (images = Cloudflare R2, records = Supabase) &middot; until you delete it or it is pushed out of the per-place limit (50 photos per place, newest first)</td>
+    </tr>
+    <tr>
+      <td>Report and block records <em>(if you use those features)</em></td>
+      <td>Reviewing and acting on inappropriate content; hiding photos from a poster you do not want to see</td>
+      <td>Operator&#39;s server (Supabase) &middot; destroyed upon account deletion or after handling, per internal standards</td>
     </tr>
     <tr>
       <td>Crash log and device / app information<br>(when the app crashes)</td>
@@ -141,6 +158,27 @@
   <p>Displaying notifications requires your <strong>notification permission</strong> (Android 13 and above). Declining it leaves every other feature usable, and you can change your choice in device settings at any time (see section 5).</p>
   <p>The Operator does <strong>not send promotional messages</strong> through this channel. Notifications are limited to service news and update announcements; should promotional messages ever be introduced, <strong>separate prior consent</strong> will be obtained as required by the Act on Promotion of Information and Communications Network Utilization and Information Protection.</p>
 
+  <h3>1-3. Details on accounts (social login)</h3>
+  <p>Using photo sharing requires <strong>signing in with a Google or Kakao account.</strong> Signing in is optional: <strong>without signing in you can still use every other feature, including viewing and reporting shared photos.</strong></p>
+  <ul>
+    <li><strong>What we receive</strong> &mdash; from the social login provider (Google LLC or Kakao Corp.): your email address, nickname, profile image (if you consented to provide it), and the provider&#39;s user identifier. <strong>We never receive or store your password.</strong></li>
+    <li><strong>Purpose</strong> &mdash; granting you rights to view, manage and delete &quot;photos I posted&quot;; preventing abuse such as exceeding upload limits; handling reports and blocks; responding to inquiries.</li>
+    <li><strong>Where it is stored</strong> &mdash; the Operator&#39;s server (Supabase, Seoul region, Republic of Korea), retained until account deletion.</li>
+    <li><strong>Account deletion</strong> &mdash; you can delete your account at any time from <em>Settings &rarr; Account &rarr; Delete account</em>. Deleting it also deletes your account information and the photos you shared with that account. If you cannot access the app, see the <a href="../account-deletion.html">account deletion guide</a>.</li>
+  </ul>
+  <p>For Kakao accounts, an email address may not be provided depending on Kakao-side settings. This does not affect signing in or using sharing.</p>
+
+  <h3>1-4. Details on photo sharing</h3>
+  <p>Sharing happens <strong>only for photos you mark as &quot;public&quot; yourself, right after capture.</strong> <strong>Photos you do not mark never leave your device.</strong></p>
+  <ul>
+    <li><strong>What is uploaded</strong> &mdash; the <strong>image with metadata (EXIF), including location coordinates, removed</strong>; the capture time; the landmark (place) you linked; and the <strong>displayed nickname</strong> described below. The GPS coordinates in the original file are not uploaded; which landmark a photo belongs to is expressed solely by the place link you chose.</li>
+    <li><strong>Who can see it</strong> &mdash; a shared photo can be viewed in that landmark&#39;s album by <strong>every user of the Service, including users who are not signed in.</strong></li>
+    <li><strong>The nickname that is made public</strong> &mdash; a shared photo is <strong>displayed together with the nickname you choose.</strong> If you have not chosen one, a nickname generated automatically by the Service (for example, &quot;남해여행자1234&quot;) is displayed. You can change it at any time in <em>Settings &rarr; Profile</em>; after you change it, <strong>the new nickname is also shown on photos you shared earlier.</strong> <strong>Your email address, profile image and account identifier are not made public.</strong></li>
+    <li><strong>Retention</strong> &mdash; up to 50 photos are kept per place; when a new photo arrives, the oldest is pushed out of the list and deleted. You can delete photos you posted at any time.</li>
+    <li><strong>Reporting and action</strong> &mdash; anyone (even without signing in) can report an inappropriate photo. The Operator reviews reported photos and may hide or delete them, and may retain a reported photo for up to 30 days for that review.</li>
+    <li><strong>Blocking</strong> &mdash; a signed-in user can block a poster so that their photos are not shown to them. The block list shows <strong>the nickname as it was at the time of blocking.</strong></li>
+  </ul>
+
   <h2>2. Transmissions to external APIs</h2>
   <p>When you use the features below, the data needed for each feature is sent directly from your device to an external API. It is used only to generate that response; the Operator does not collect or store it.</p>
   <div class="table-wrap">
@@ -164,10 +202,39 @@
   </table>
   </div>
   <p>When you open <strong>external web pages</strong> inside the app — Nangman Namhae, the Namhae Cultural Center, and the like — ordinary web connection data (such as your IP address) reaches that site, as with any browser. Each recipient's handling of personal data is governed by that organization's or site's own privacy policy.</p>
-  <p>As the Service evolves, external APIs and data sources of the same character (tourism and regional information) may be added or changed, or tourism content may come to be downloaded from a server (cloud) managed by the Operator. As long as <strong>no new collection of personal or location data</strong> is involved, this policy continues to apply as is; if new processing of personal data arises, this policy will be revised and, where required, separate consent will be obtained.</p>
+  <p><strong>Namhae tourism information is currently served through a server managed by the Operator (Supabase).</strong> The coordinates needed for a lookup (the map viewport or your current position) are sent to that server, but <strong>the Operator does not store the coordinates used for lookups.</strong> This routing exists to share the daily call quota of the Korea Tourism Organization&#39;s TourAPI; the information provided is the same.</p>
+  <p>As the Service evolves, external APIs and data sources of the same character (tourism and regional information) may be added or changed. As long as <strong>no new collection of personal or location data</strong> is involved, this policy continues to apply as is; if new processing of personal data arises, this policy will be revised and, where required, separate consent will be obtained.</p>
 
   <h2>3. Third-party provision, outsourcing, and cross-border transfer</h2>
-  <p>The Operator does not provide your personal data to third parties. For app error diagnosis, processing is outsourced as set out below, and because the processor's servers are located abroad, the data is transferred abroad.</p>
+  <p>The Operator does not provide your personal data to third parties. <strong>However, photos you mark as &quot;public&quot; yourself are made viewable to other users as described in section 1-4</strong> (this is disclosure by your own choice, not provision by the Operator to a third party).</p>
+  <p>To provide the Service and diagnose errors, processing is outsourced as set out below; some processors&#39; servers are located abroad, so that data is transferred abroad.</p>
+
+  <h3>3-1. Storage of account and sharing records (Supabase &mdash; stored in Korea)</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Processor</td><td>Supabase, Inc. &middot; <a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Scope of work</td><td>Storing and managing account information, accompanying information for shared photos (including nicknames), and report/block records (database and authentication infrastructure)</td></tr>
+    <tr><td>Storage location</td><td><strong>Seoul region, Republic of Korea</strong> (AWS ap-northeast-2) &mdash; this is not a cross-border transfer.</td></tr>
+    <tr><td>Retention</td><td>Until account deletion (the periods stated in section 1)</td></tr>
+  </table>
+  </div>
+
+  <h3>3-2. Storage of shared photo images (Cloudflare &mdash; cross-border transfer)</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Transferee</td><td><strong>Cloudflare, Inc.</strong> (R2 object storage)<br>Contact: 101 Townsend Street, San Francisco, CA 94107, USA &middot; legal@cloudflare.com<br><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td></tr>
+    <tr><td>Scope of work</td><td>Storing and delivering shared photo image files</td></tr>
+    <tr><td>Items transferred</td><td>The shared photo images in section 1-4 (metadata-stripped &mdash; no name, contact details or location coordinates)</td></tr>
+    <tr><td>Countries</td><td>Countries hosting Cloudflare data centres in the Asia-Pacific region (bucket location hint = <code>APAC</code>). Cloudflare <strong>offers only continent/region-level settings for R2 and does not support specifying a country</strong>, and even this setting is best-effort rather than a guarantee. We therefore cannot state a definite country.</td></tr>
+    <tr><td>When and how</td><td>At the moment you choose to make a photo public, over HTTPS-encrypted transmission</td></tr>
+    <tr><td>Purpose</td><td>Serving images for the per-place shared album</td></tr>
+    <tr><td>Retention</td><td>Until you delete the photo or it is pushed out of the per-place limit (destroyed from storage upon deletion)</td></tr>
+  </table>
+  </div>
+
+  <h3>3-3. Crash logs (Google &mdash; cross-border transfer)</h3>
   <div class="table-wrap">
   <table>
     <tr><th>Item</th><th>Details</th></tr>
@@ -216,7 +283,11 @@
 
   <h2>4. Retention and destruction</h2>
   <ul>
-    <li><strong>Your data — photos, location, notes, commemorative stamps</strong>: stored only on your device, so deleting a photo or record in the app, or uninstalling the app, destroys it immediately. The Operator keeps no copy.</li>
+    <li><strong>Your data &mdash; photos, location, notes, commemorative stamps</strong>: stored only on your device unless you share a photo, so deleting a photo or record in the app, or uninstalling the app, destroys it immediately. The Operator keeps no copy of unshared content.</li>
+    <li><strong>Account information</strong>: destroyed upon account deletion. Deleting your account also deletes the photos you shared with it.</li>
+    <li><strong>Shared photos and accompanying information (including nicknames)</strong>: destroyed when you delete them or when they are pushed out of the per-place limit (50 photos per place, newest first). A photo under report review may be retained for up to <strong>30 days</strong> for that purpose.</li>
+    <li><strong>Report and block records</strong>: destroyed upon account deletion or after handling, per internal standards.</li>
+    <li><strong>Location use and provision records</strong>: retained for <strong>6 months</strong> from the time of recording under Article 16(2) of the Act on the Protection and Use of Location Information, then destroyed. They contain no coordinates or addresses.</li>
     <li><strong>Crash logs and device / app information</strong>: retained for <strong>90 days</strong> after transmission under Google's Firebase Crashlytics policy, then destroyed from live and backup systems per Google's deletion procedures.</li>
     <li><strong>Notification tokens</strong>: uninstalling the app invalidates the token, and no further notifications are delivered. Google's stored copies are cleaned up through token expiry and renewal procedures.</li>
   </ul>
@@ -225,7 +296,11 @@
   <ul>
     <li>You can grant or withdraw the camera, location, and photo permissions in device settings at any time.</li>
     <li>You can delete individual photos and records directly in the app.</li>
-    <li>Uninstalling the app deletes all data the app stored, and no further crash logs are sent.</li>
+    <li>Uninstalling the app deletes the data <strong>stored on your device</strong>, and no further crash logs are sent. <strong>Photos you shared and your account information remain on the Operator&#39;s server</strong>, so delete the photos in the app or use <em>Settings &rarr; Account &rarr; Delete account</em>.</li>
+    <li><strong>You can delete a photo you made public at any time</strong>; once deleted it is no longer visible to other users and is destroyed from storage.</li>
+    <li><strong>You can change your nickname at any time</strong> (<em>Settings &rarr; Profile</em>). After you change it, the new nickname is also shown on photos you shared earlier.</li>
+    <li><strong>You can delete your account at any time</strong> (<em>Settings &rarr; Account &rarr; Delete account</em>). If you cannot access the app, see the <a href="../account-deletion.html">account deletion guide</a>.</li>
+    <li><strong>You can review your location use and provision records</strong> (<em>Settings &rarr; Location use history</em> &middot; Article 24 of the Act on the Protection and Use of Location Information).</li>
     <li>Requests to access, delete, or suspend the processing of crash logs can be made through the contact in section 8. Because crash logs contain nothing that can single you out, it may be impossible to locate a specific user's records; if so, we will explain why.</li>
     <li><strong>You can withdraw notification consent at any time.</strong> Turning off <em>Settings → Notifications</em> in the app unsubscribes you from the topic, so <strong>no further notifications are sent</strong> (you are removed from delivery, not merely muted). Turning notifications off in <em>device Settings → Apps → (app name) → Notifications</em> also stops them from appearing, and uninstalling the app stops delivery as well.</li>
   </ul>
@@ -258,8 +333,9 @@
   </ul>
 
   <h2>10. Changes to this policy</h2>
-  <p>This policy may be revised as laws or the Service change. The Operator may introduce new features — accounts and login (including social login), sharing or posting of photos and other content, advertising, or server-based delivery of tourism content — and where such a feature changes how personal data is processed, <strong>this policy will be revised before the feature launches</strong>, with <strong>separate consent</strong> obtained for anything the law requires. Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
+  <p>This policy may be revised as laws or the Service change. <strong>Accounts, login and photo sharing were reflected in version 2.0 of this policy (September 2, 2026).</strong> The Operator may introduce further features &mdash; advertising, or server-based delivery of tourism content &mdash; and where such a feature changes how personal data is processed, <strong>this policy will be revised before the feature launches</strong>, with <strong>separate consent</strong> obtained for anything the law requires. Revisions are announced in the app or on this page at least 7 days before taking effect (30 days for material changes).</p>
   <ul>
+    <li><strong>v2.0 (2026-09-02) &mdash; accounts and photo sharing reflected.</strong> Updated &quot;At a glance&quot; and the section 1 table (three rows added: account information, shared photos and accompanying information, report/block records); added sections 1-3 (accounts) and 1-4 (photo sharing, including <strong>the nickname that is made public</strong>); added Supabase (stored in Korea) and Cloudflare R2 (cross-border) processors in section 3; added server-side items, deletion and access routes to sections 4 and 5; corrected the description of where lookup coordinates are sent (external APIs <strong>or the Operator&#39;s server</strong>; lookup coordinates are not stored); replaced the &quot;planned features&quot; notice in section 10 with the realised description. <br>The nickname that is made public <strong>also applies to photos shared before this revision.</strong> This revision fulfils the &quot;revised before the feature launches&quot; commitment in section 10 of v1.0; consent required by law is obtained through the consent step shown the first time you use sharing in the app. At the time of this revision the Service is unreleased and no user has used sharing, so the prior-notice period is satisfied, without disadvantage to users, by the publication of this document.</li>
     <li>2026-08-28 overseas-transfer disclosure expanded — added the transferee's <strong>contact details</strong> and <strong>how to refuse a transfer, the procedure and its effect</strong>, and corrected the description of Cloudflare's destination countries to match what was measured (Personal Information Protection Act, Article 28-8(1)3(a) and 28-8(2); no change adverse to users)</li>
     <li>v1.0 (2026-08-09) — First enactment. Separated into a dedicated policy for the Namhae edition from the policy that previously covered it together with the nationwide Spacetime Diary (no advertising provisions — this app shows no ads).</li>
   </ul>
